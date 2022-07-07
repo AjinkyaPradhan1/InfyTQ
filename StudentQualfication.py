@@ -36,7 +36,4 @@ class Student:
         return False
 
     def check_qualification(self):
-        if  self.__marks >= 65 and self.__age>20: 
-            return True
-        else:
-            return False
+        return self.validate_age() and self.validate_marks() and self.__marks >=65
